@@ -16,15 +16,15 @@ function App() {
           backgroundImage: "url(/images/background.jpg)",
         }}
       >
-        <div className="flex flex-col items-center">
-          <Navbar />
+        <Navbar />
+        <main>
           <Hero />
           <About />
           <Skills />
           <Portfolio />
           <Contact />
-          <Footer />
-        </div>
+        </main>
+        <Footer />
       </div>
     </>
   );

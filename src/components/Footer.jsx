@@ -2,43 +2,53 @@ import {
   FaInstagramSquare,
   FaFacebookSquare,
   FaLinkedin,
-  FaPinterestSquare,
+  FaGithubSquare,
 } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="flex w-full items-center justify-between py-1 px-10 bg-gray-200 opacity-80 text-green-950 font-bold mt-10">
-      <aside>
-        <p> © {new Date().getFullYear()} Created by Olena Prydalna</p>
-      </aside>
+    <footer className="w-full bg-gray-200 opacity-90 text-green-950 py-6 px-6 md:px-10">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="text-center md:text-left">
+          <p className="font-semibold text-sm md:text-base">
+            © {new Date().getFullYear()} Created by Olena Prydalna
+          </p>
+        </div>
 
-      <div className="flex flex-wrap gap-20 md:place-self-start md:justify-self-end mt-2">
-        <ul className="flex gap-7">
-          <li>
-            <a
-              href="https://www.instagram.com/"
-              className="text-green-950 inline-block transition-transform duration-300 ease-in-out transform hover:scale-125"
-            >
-              <FaInstagramSquare size={30} />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/"
-              className="text-green-950 inline-block transition-transform duration-300 ease-in-out transform hover:scale-125"
-            >
-              <FaFacebookSquare size={30} />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/"
-              className="text-green-950 inline-block transition-transform duration-300 ease-in-out transform hover:scale-125"
-            >
-              <FaLinkedin size={30} />
-            </a>
-          </li>
-        </ul>
+        <div className="flex gap-6">
+          <a
+            href="https://www.instagram.com/"
+            className="text-green-950 transition-transform duration-300 ease-in-out transform hover:scale-125 hover:text-green-900"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagramSquare size={28} />
+          </a>
+          <a
+            href="https://www.facebook.com/"
+            className="text-green-950 transition-transform duration-300 ease-in-out transform hover:scale-125 hover:text-green-900"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebookSquare size={28} />
+          </a>
+          <a
+            href="https://www.linkedin.com/"
+            className="text-green-950 transition-transform duration-300 ease-in-out transform hover:scale-125 hover:text-green-900"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin size={28} />
+          </a>
+          <a
+            href="https://github.com/"
+            className="text-green-950 transition-transform duration-300 ease-in-out transform hover:scale-125 hover:text-green-900"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithubSquare size={28} />
+          </a>
+        </div>
       </div>
     </footer>
   );
